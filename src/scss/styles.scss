@@ -1,0 +1,112 @@
+@use 'variables.scss';
+@use 'queries.scss';
+
+//Navbar Menu
+    .navbar {
+        background-color: var(--background-color);
+        color: var(--text-nav);
+        .navbar-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+                max-width: 80%;
+            }
+        }
+        .navbar-collapse {
+            ul {
+                margin-right: auto;
+                li {
+                    color: var(--text-nav);
+                    a {
+                        color: var(--text-nav);
+                        font-size: 18px;
+                        font-family: var(--family-nav);
+                    }
+                }
+            }
+            form {
+                display: flex;
+                justify-content: right;
+                width: 100%;
+                max-width: 25%;
+            }
+        }
+        
+    }
+
+    //Hero
+    header {
+        position: relative;
+        text-align: center;
+        .container-fluid{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            .header-h1 {
+                position: absolute;
+                top: 40%;
+                font-size: 4rem;
+                font-family: "Playwrite IN", serif;
+            }
+            .header-p {
+                position: absolute;
+                top: 60%;
+                font-size: 1.5rem;
+                font-family: "Yrsa", serif;
+            }
+        }
+    }
+
+    //ABout Us
+    .container-fluid {
+        background-color: var( --background-about);
+        padding: 64px 0;
+        margin: 0;
+        .row-about {
+            .col-about {
+                .about-h2 {
+                    font-family: "Poiret One", serif;
+                    color: var(--h1-color);
+                    font-size: 4rem;
+                }
+                .about-p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: var(--text-about);
+                    font-size: 1.2rem;
+                }
+            }
+            img {
+                margin-top: 15px;
+                width: 100%;
+                max-width: 60%;
+                height: auto;
+        }
+    }
+    }
+
+    //Footer
+    .footer {
+        margin: 0;
+        padding: 0;
+        footer {
+            background-color: var(--background-ft);
+            padding: 15px;
+            img {
+                width: 100%;
+                max-width: 30px;
+                height: 24px;
+            }
+            span {
+                color: var(--text-ft);
+                font-size: 18px;
+            }
+        }
+    }

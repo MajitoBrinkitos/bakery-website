@@ -1,0 +1,39 @@
+---
+---
+<header>
+    <div class="container-fluid">
+        <img src="/images/about-img.png" alt="about image">
+        <h1 class="header-h1">Welcome to a piece of heaven</h1>
+        <p class="header-p">From local grains</p>
+    </div>
+</header>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.header-h1', {
+        duration: 2,
+        x: -300,
+        ease: 'bounce'
+        });
+        gsap.to('.header-h1', {
+            duration: 2,
+            x: 100
+        });
+
+        gsap.from('.header-p', {
+            duration: 2,
+            x: 300,
+            ease: 'bounce'
+        });
+        gsap.to('.header-p', {
+            duration: 2,
+            x: 100
+        });
+</script>

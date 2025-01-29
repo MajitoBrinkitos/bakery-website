@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+:root {
+  --background-color: #F5DEB3;
+  --text-color: #8B4513;
+  --background-nav: #FFF5E4;
+  --text-nav: #8B4513;
+  --family-nav: "Playwrite IN", serif;
+  --background-about: #FFF5E4;
+  --text-about: black;
+  --h1-color: #8B4513;
+  --background-ft: #F5DEB3;
+  --text-ft: #8B4513;
+  --family-ft: "Playwrite IN", serif;
+}
+
+[data-bs-theme=dark] {
+  --background-color: black;
+  --text-color: black;
+  --background-nav: black;
+  --text-nav: white;
+  --family-nav: "Playwrite IN", serif;
+  --background-about: black;
+  --text-about: whitesmoke;
+  --h1-color: white;
+  --background-ft: #8B4513;
+  --text-ft: white;
+  --family-ft: "Playwrite IN", serif;
+}
+
+@media (max-width: 575px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    margin-top: 5px;
+  }
+  .navbar .container .navbar-collapse .navbar-brand {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 50%;
+  }
+  .navbar .container .navbar-collapse form {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    max-width: 40%;
+  }
+  header {
+    position: relative;
+    text-align: center;
+  }
+  header .container-fluid {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  header .container-fluid img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  header .container-fluid h1.header-h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 1.1rem;
+    font-family: "Playwrite IN", serif;
+  }
+  header .container-fluid p.header-p {
+    position: absolute;
+    top: 60%;
+    font-size: 0.8rem;
+    font-family: "Yrsa", serif;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-about);
+    padding: 64px 0;
+    margin: 0;
+  }
+  .container-fluid .row-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fluid .row-about .col-about h2.about-h2 {
+    font-family: "Poiret One", serif;
+    color: var(--h1-color);
+    font-size: 2rem;
+  }
+  .container-fluid .row-about .col-about p.about-p {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-about);
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    margin-top: 5px;
+  }
+  .navbar .container .navbar-collapse .navbar-brand {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+  }
+  .navbar .container .navbar-collapse .navbar-brand img {
+    width: 100%;
+    max-width: 40%;
+  }
+  .navbar .container .navbar-collapse form {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    max-width: 40%;
+  }
+  header {
+    position: relative;
+    text-align: center;
+  }
+  header .container-fluid {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  header .container-fluid img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  header .container-fluid h1.header-h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 2rem;
+    font-family: "Playwrite IN", serif;
+  }
+  header .container-fluid p.header-p {
+    position: absolute;
+    top: 60%;
+    font-size: 1.5rem;
+    font-family: "Yrsa", serif;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-about);
+    padding: 64px 0;
+    margin: 0;
+  }
+  .container-fluid .row-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fluid .row-about .col-about h2.about-h2 {
+    font-family: "Poiret One", serif;
+    color: var(--h1-color);
+    font-size: 2.5rem;
+  }
+  .container-fluid .row-about .col-about p.about-p {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-about);
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .navbar .navbar-collapse .navbar-brand {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+  }
+  .navbar .navbar-collapse .navbar-brand img {
+    width: 100%;
+    max-width: 40%;
+  }
+  .navbar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 40%;
+  }
+  header {
+    position: relative;
+    text-align: center;
+  }
+  header .container-fluid {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  header .container-fluid img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  header .container-fluid h1.header-h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 2.8rem;
+    font-family: "Playwrite IN", serif;
+  }
+  header .container-fluid p.header-p {
+    position: absolute;
+    top: 60%;
+    font-size: 1.8rem;
+    font-family: "Yrsa", serif;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-about);
+    padding: 64px 0;
+    margin: 0;
+  }
+  .container-fluid .row-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fluid .row-about .col-about h2.about-h2 {
+    font-family: "Poiret One", serif;
+    color: var(--h1-color);
+    font-size: 2.8rem;
+  }
+  .container-fluid .row-about .col-about p.about-p {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-about);
+    font-size: 1.2rem;
+  }
+  .container-fluid .row-about img {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar .navbar-brand {
+    width: 20%;
+  }
+  .navbar .navbar-brand img {
+    max-width: 80%;
+  }
+  .navbar .navbar-collapse ul {
+    margin-right: auto;
+  }
+  .navbar .form-control {
+    width: 50%;
+  }
+  header {
+    position: relative;
+    text-align: center;
+  }
+  header .container-fluid {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  header .container-fluid img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  header .container-fluid .header-h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 3rem;
+    font-family: "Playwrite IN", serif;
+  }
+  header .container-fluid .header-p {
+    position: absolute;
+    top: 60%;
+    font-size: 1.9rem;
+    font-family: "Yrsa", serif;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .navbar-brand {
+    width: 20%;
+  }
+  .navbar .navbar-brand img {
+    max-width: 80%;
+  }
+  .navbar .navbar-collapse ul {
+    margin-right: auto;
+  }
+  .navbar .form-control {
+    width: 60%;
+  }
+  header {
+    position: relative;
+    text-align: center;
+  }
+  header .container-fluid {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  header .container-fluid img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  header .container-fluid .header-h1 {
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+    font-family: "Playwrite IN", serif;
+  }
+  header .container-fluid .header-p {
+    position: absolute;
+    top: 60%;
+    font-size: 2rem;
+    font-family: "Yrsa", serif;
+  }
+}
+.navbar {
+  background-color: var(--background-color);
+  color: var(--text-nav);
+}
+.navbar .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-brand img {
+  width: 100%;
+  max-width: 80%;
+}
+.navbar .navbar-collapse ul {
+  margin-right: auto;
+}
+.navbar .navbar-collapse ul li {
+  color: var(--text-nav);
+}
+.navbar .navbar-collapse ul li a {
+  color: var(--text-nav);
+  font-size: 18px;
+  font-family: var(--family-nav);
+}
+.navbar .navbar-collapse form {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  max-width: 25%;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+header .container-fluid {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+header .container-fluid img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+header .container-fluid .header-h1 {
+  position: absolute;
+  top: 40%;
+  font-size: 4rem;
+  font-family: "Playwrite IN", serif;
+}
+header .container-fluid .header-p {
+  position: absolute;
+  top: 60%;
+  font-size: 1.5rem;
+  font-family: "Yrsa", serif;
+}
+
+.container-fluid {
+  background-color: var(--background-about);
+  padding: 64px 0;
+  margin: 0;
+}
+.container-fluid .row-about .col-about .about-h2 {
+  font-family: "Poiret One", serif;
+  color: var(--h1-color);
+  font-size: 4rem;
+}
+.container-fluid .row-about .col-about .about-p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-about);
+  font-size: 1.2rem;
+}
+.container-fluid .row-about img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 60%;
+  height: auto;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+}
+.footer footer {
+  background-color: var(--background-ft);
+  padding: 15px;
+}
+.footer footer img {
+  width: 100%;
+  max-width: 30px;
+  height: 24px;
+}
+.footer footer span {
+  color: var(--text-ft);
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=styles.css.map */

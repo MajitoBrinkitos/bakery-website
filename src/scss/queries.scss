@@ -1,0 +1,359 @@
+//Extra small devices < 576px
+@media (max-width: 575px) {
+    //Navbar
+    .navbar {
+        .container {
+            .navbar-collapse {
+                .navbar-nav {
+                    margin-top: 5px;
+                }
+                .navbar-brand {
+                    display: flex;
+                    justify-content: left;
+                    margin-top: 10px;
+                    width: 100%;
+                    max-width: 50%;
+                }
+                form {
+                    display: flex;
+                    justify-content: right;
+                    width: 100%;
+                    max-width: 40%;
+                }
+            }
+        }
+    }
+
+    //Hero
+    header {
+        position: relative;
+        text-align: center;
+        .container-fluid{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            h1.header-h1 {
+                position: absolute;
+                top: 40%;
+                font-size: 1.1rem;
+                font-family: "Playwrite IN", serif;
+            }
+            p.header-p {
+                position: absolute;
+                top: 60%;
+                font-size: 0.8rem;
+                font-family: "Yrsa", serif;
+            }
+        }
+    }
+
+        //About Us
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+            background-color: var( --background-about);
+            padding: 64px 0;
+            margin: 0;
+            .row-about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .col-about {
+                    h2.about-h2 {
+                        font-family: "Poiret One", serif;
+                        color: var(--h1-color);
+                        font-size: 2rem;
+                    }
+                    p.about-p {
+                        margin-top: 5px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: var(--text-about);
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+}
+
+//Small Devices 576px to 768px
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar {
+        .container {
+            .navbar-collapse {
+                .navbar-nav {
+                    margin-top: 5px;
+                }
+                .navbar-brand {
+                    display: flex;
+                    justify-content: left;
+                    margin-top: 10px;
+                    img {
+                        width: 100%;
+                        max-width: 40%;
+                    }
+                }
+                form {
+                    display: flex;
+                    justify-content: right;
+                    width: 100%;
+                    max-width: 40%;
+                }
+            }
+        }
+    }
+
+    //Hero
+    header {
+        position: relative;
+        text-align: center;
+        .container-fluid{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            h1.header-h1 {
+                position: absolute;
+                top: 40%;
+                font-size: 2rem;
+                font-family: "Playwrite IN", serif;
+            }
+            p.header-p {
+                position: absolute;
+                top: 60%;
+                font-size: 1.5rem;
+                font-family: "Yrsa", serif;
+            }
+        }
+    }
+
+        //About Us
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+            background-color: var( --background-about);
+            padding: 64px 0;
+            margin: 0;
+            .row-about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .col-about {
+                    h2.about-h2 {
+                        font-family: "Poiret One", serif;
+                        color: var(--h1-color);
+                        font-size: 2.5rem;
+                    }
+                    p.about-p {
+                        margin-top: 5px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: var(--text-about);
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+}
+
+//Medium Devices
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        .navbar-collapse {
+            .navbar-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+            }
+            .navbar-brand {
+                display: flex;
+                justify-content: left;
+                margin-top: 10px;
+                img {
+                    width: 100%;
+                    max-width: 40%;
+                }
+            }
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 40%;
+        }
+    }
+
+     //Hero
+     header {
+        position: relative;
+        text-align: center;
+        .container-fluid{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            h1.header-h1 {
+                position: absolute;
+                top: 40%;
+                font-size: 2.8rem;
+                font-family: "Playwrite IN", serif;
+            }
+            p.header-p {
+                position: absolute;
+                top: 60%;
+                font-size: 1.8rem;
+                font-family: "Yrsa", serif;
+            }
+        }
+    }
+
+    //About Us
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        background-color: var( --background-about);
+        padding: 64px 0;
+        margin: 0;
+        .row-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .col-about {
+                h2.about-h2 {
+                    font-family: "Poiret One", serif;
+                    color: var(--h1-color);
+                    font-size: 2.8rem;
+                }
+                p.about-p {
+                    margin-top: 5px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: var(--text-about);
+                    font-size: 1.2rem;
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 50%;
+                height: auto;
+        }
+        }
+    }
+
+    
+}
+
+//Large devices
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        .navbar-brand {
+            width: 20%;
+            img {
+                max-width: 80%;
+            }
+        }
+        .navbar-collapse {
+            ul {
+                margin-right: auto;
+            }
+        }
+        .form-control {
+            width: 50%;
+        }
+    }
+
+    //Hero
+    header {
+        position: relative;
+        text-align: center;
+        .container-fluid{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            .header-h1 {
+                position: absolute;
+                top: 40%;
+                font-size: 3rem;
+                font-family: "Playwrite IN", serif;
+            }
+            .header-p {
+                position: absolute;
+                top: 60%;
+                font-size: 1.9rem;
+                font-family: "Yrsa", serif;
+            }
+        }
+    }
+}
+
+//Extra large devices
+@media (min-width: 1200px) {
+    .navbar {
+        .navbar-brand {
+            width: 20%;
+            img{
+                max-width: 80%;
+            }
+        }
+        .navbar-collapse {
+            ul {
+                margin-right: auto;
+            }
+        }
+        .form-control  {
+            width: 60%;
+        }
+    }
+
+     //About Us
+     header {
+        position: relative;
+        text-align: center;
+        .container-fluid{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            .header-h1 {
+                position: absolute;
+                top: 40%;
+                font-size: 4rem;
+                font-family: "Playwrite IN", serif;
+            }
+            .header-p {
+                position: absolute;
+                top: 60%;
+                font-size: 2rem;
+                font-family: "Yrsa", serif;
+            }
+        }
+    }
+}
