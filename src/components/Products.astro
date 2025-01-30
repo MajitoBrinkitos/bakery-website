@@ -1,0 +1,162 @@
+---
+---
+<header>
+    <h1 class="title">From our Oven to Your Table</h1>
+</header>
+<!--Search -->
+<div class="container-fluid search">
+    <!--Search -->
+    <form role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    </form>
+</div>
+<main>
+    <button id="cart-btn" type="button" class="btn-prod">
+        <span id="show-hide-cart">Show</span> Cart
+    </button>
+    <div id="cart-container">
+        <button class="btn-prod" id="clear-cart-btn">Clear Cart</button>
+        <div id="products-container"></div>
+        <p>Total number of items: <span id="total-items">0</span></p>
+        <p>Subtotal: <span id="subtotal">$0</span></p>
+        <p>Taxes:<span id="taxes">$0</span></p>
+        <p>Total: <span id="total"></span></p>
+    </div>
+    <div id="bakery-card-container"></div>
+</main>
+
+<script>
+    //cart
+    document.addEventListener('DOMContentLoaded', () => {
+  const cartContainer = document.getElementById('cart-container');
+  const productsContainer = document.getElementById('products-container');
+  const bakeryCards = document.getElementById('bakery-card-container');
+
+  //buttons clear, cart
+  const cartBtn = document.getElementById('cart-btn');
+const clearCartBtn = document.getElementById('clear-cart-btn');
+
+//totals
+const totalNumberOfItems = document.getElementById('total-items');
+const cartSubTotal = document.getElementById('subtotal');
+const cartTaxes = document.getElementById('taxes');
+const cartTotal = document.getElementById('total');
+const showHideCartSpan = document.getElementById('show-hide-cart');
+let isCartShowing = false;
+
+//products
+const products = [
+{
+    id: 1,
+    name: "Vanilla Cupcakes (6 Pack)",
+    price: 12.99,
+    category: "Cupcake"
+  },
+  {
+    id: 2,
+    name: "French Macaron",
+    price: 3.99,
+    category: "Macaron"
+  },
+  {
+    id: 3,
+    name: "Pumpkin Cupcake",
+    price: 3.99,
+    category: "Cupcake"
+  },
+  {
+    id: 4,
+    name: "Chocolate Cupcake",
+    price: 5.99,
+    category: "Cupcake"
+  },
+  {
+    id: 5,
+    name: "Chocolate Pretzels (4 Pack)",
+    price: 10.99,
+    category: "Pretzel"
+  },
+  {
+    id: 6,
+    name: "Almond Chocolate Croissant",
+    price: 2.99,
+    category: "Croissant"
+  },
+  {
+    id: 7,
+    name: "Chocolate Macarons (4 Pack)",
+    price: 9.99,
+    category: "Macaron"
+  },
+  {
+    id: 8,
+    name: "Strawberry Pretzel",
+    price: 4.99,
+    category: "Pretzel"
+  },
+  {
+    id: 9,
+    name: "Butter Pecan Ice Cream",
+    price: 2.99,
+    category: "Ice Cream"
+  },
+  {
+    id: 10,
+    name: "Rocky Road Ice Cream",
+    price: 2.99,
+    category: "Ice Cream"
+  },
+  {
+    id: 11,
+    name: "Vanilla Macarons (5 Pack)",
+    price: 11.99,
+    category: "Macaron"
+  }, {
+    id: 12,
+    name: "Lemon Cupcakes (4 Pack)",
+    price: 12.99,
+    category: "Cupcake"
+  },
+  {
+    id: 13,
+    name: "Classic Wedding Cake",
+    price: 500,
+    category: "Wedding Cakes"
+  },
+  {
+    id: 14,
+    name: "Blueberry Cupcake",
+    price: 2.99,
+    category: "Cupcake"
+  },
+  {
+    id: 15,
+    name: "Almond Croissant",
+    price: 1.69,
+    category: "Croissant",
+  },
+  {
+    id: 16,
+    name: "Custom Wedding Cake",
+    price: 1000,
+    category: "Wedding Cakes"
+  },
+];
+
+//calling products
+products.forEach(
+  ({ name, id, price, category }) => {
+    bakeryCards.innerHTML += `
+        <div class="bakery-card">
+            <h2 style="color: var(--color-prod);">${name}</h2>
+            <p style="color: var(--color-prod);" class="bakery-price">$${price}</p>
+            <p style="color: var(--color-prod);" class="product-category">Category: ${category}</p>
+            <button id=${id} class="btn-prod add-to-cart-btn">
+                Add to cart
+            </button>
+        </div>
+    `;
+  }
+);
+})
+</script>

@@ -17,3 +17,6 @@ The project is structured into the following folders and files:
 - **Hero** This is welcome message inviting customer to explore more about this delicious bakery.
 
 - **About Us** A small description of the founder and what inspires him everyday to create delicious bread in the heart of Burnaby City.
+
+NOtes:
+-id: dessert-card-container => bakery-card-container

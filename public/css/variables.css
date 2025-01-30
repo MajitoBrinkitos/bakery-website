@@ -12,6 +12,10 @@
   --background-about: #FFF5E4;
   --text-about: black;
   --h1-color: #8B4513;
+  --background-prod: #fcfaef;
+  --color-prod: #a63636;
+  --btn-prod: #c45d3e;
+  --btn-color: white;
   --background-ft: #F5DEB3;
   --text-ft: #8B4513;
   --family-ft: "Playwrite IN", serif;
@@ -26,6 +30,10 @@
   --background-about: black;
   --text-about: whitesmoke;
   --h1-color: white;
+  --background-prod: #5c5470;
+  --color-prod: #ffffff;
+  --btn-prod: #f3bc77;
+  --btn-color: black;
   --background-ft: #8B4513;
   --text-ft: white;
   --family-ft: "Playwrite IN", serif;
